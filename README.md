@@ -5,6 +5,8 @@ Interfaces Inteligentes
 - Manuel Andrés Carrera Galafate
 - Victoria Manrique Rolo
 
+## Descripción del juego (?)
+
 ## Cuestiones importantes para el uso
 
 ## Hitos de programación
