@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SelectorMapas : MonoBehaviour {
     public void Mapa1() {
-        SceneManager.LoadScene("Game - Nivel 1");
+        SceneManager.LoadScene("Room 1");
     }
     
     public void Mapa2() {
-        SceneManager.LoadScene("Game - Nivel 2");
+        SceneManager.LoadScene("Room 1");
     }
     
     public void Mapa3() {
-        SceneManager.LoadScene("Game - Nivel 3");
+        SceneManager.LoadScene("Room 1");
     }
 }
