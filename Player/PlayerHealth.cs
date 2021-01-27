@@ -4,29 +4,40 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
-    public int maxHealth = 100;
+    public int maxHealth = 5;
     public int currentHealth;
-    public HealthBar healthBar;
     public GameObject[] enemies;
+    public GameObject[] healthPanels;
 
     void Start() {
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        for (int i = 0; i < healthPanels.Length; i++) {
+            healthPanels[i].SetActive(false);
+        } 
+        healthPanels[0].SetActive(true);
+        
     }
 
     void OnCollisionEnter(Collision collision) {
-        if(currentHealth == 0) {
-            SceneManager.LoadScene("Menu");
-        }
         foreach(GameObject currentEnemy in enemies) {
             if(currentEnemy.tag == collision.gameObject.tag) {
-                TakeDamage(20);
+                TakeDamage(1);
+                int index = maxHealth - currentHealth;
+                if(index < healthPanels.Length) {
+                    healthPanels[index].SetActive(true);
+                }
             }
+        }
+    }
+
+    void Update() {      
+        print(currentHealth);  
+        if(currentHealth <= 0) {
+            SceneManager.LoadScene("Menu");
         }
     }
 
     void TakeDamage(int damage) {
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
     }
 }

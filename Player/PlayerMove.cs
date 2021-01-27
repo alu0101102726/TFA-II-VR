@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour {
     
     private Vector3 playerInput;
-    public Animation weaponAnim;
     public CharacterController player;
     private Vector3 movePlayer;
     public float speed = 6f;
@@ -18,10 +17,6 @@ public class PlayerMove : MonoBehaviour {
     public Camera mainCamera;
     private Vector3 camForward;
     private Vector3 camRight;
-
-    void Start() {
-        weaponAnim = GetComponent<Animation>();
-    }
 
     void FixedUpdate () {
 
