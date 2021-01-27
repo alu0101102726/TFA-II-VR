@@ -31,7 +31,7 @@ Interfaces Inteligentes
   - **Sistema de ataque del jugador**: El jugador va a poder disparar balas (tienen incluido un sistema de particulas que va a mostrar el haz de la bala) y cuando se quede sin munición poder recargar(teniendo una munición infinita, pero solo 5 balas por cargador).
 
 ## Aspectos destacables
-
+  Para el desarrollo de este juego, dado que el proyecto se realizó en base a un juego de miedo, el que dió tiempo a implementar fue la brújula. Esto va a ayudarle al jugador que pueda ver en su brújula mágica la orientación que tiene y así poder orientarse mejor en el escenario.
 ## Gifs de animación
 
 ## Acuerdos de grupo
