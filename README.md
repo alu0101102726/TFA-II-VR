@@ -35,3 +35,31 @@ Interfaces Inteligentes
 ## Gifs de animación
 
 ## Acuerdos de grupo
+
+#### Desarrollo de entorno
+Esta tarea incluye la creación de las salas que conforman el mapa, aplicación de texturas y organización de sus elementos, decoración.
+- Carlos Díaz Calzadilla
+- Victoria Manrique Rolo
+
+#### Búsqueda y creación de Assets
+Adquisición de assets como pueden ser, generadores, texturas o modelos 3D.
+- Carlos Díaz Calzadilla
+- Manuel Andrés Carrera Galafate
+- Victoria Manrique Rolo
+
+#### Scripts
+Desarrollo de scripts necesarios para implementar la funcionalidades del juego.
+- Carlos Díaz Calzadilla
+- Victoria Manrique Rolo
+
+#### Historia
+Creación de la historia que complementa al juego.
+- Manuel Andrés Carrera Galafate
+
+#### Desarrollo del informe
+Creación del README del proyecto
+- Carlos Díaz Calzadilla
+- Victoria Manrique Rolo
+
+#### Desarrollo de la presentación 
+- Carlos Díaz Calzadilla
