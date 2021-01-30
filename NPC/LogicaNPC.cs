@@ -84,7 +84,8 @@ public class LogicaNPC : MonoBehaviour {
     }
   }
   /**
-  * @brief Función que se ejecuta cuando se entra en el collider del NPC.
+  * @brief Función que se ejecuta cuando algún objeto entra en el collider del NPC.
+  * Si el obejto es el jugaor, muestra un panel para que pueda aceptar la misión.
   * @param other objeto que entra en el collider.
   */
   private void OnTriggerEnter(Collider other) {
@@ -97,7 +98,8 @@ public class LogicaNPC : MonoBehaviour {
 
   }
   /**
-  * @brief 
+  * @brief Función que se ejecuta cuando se sale del collider del NPC.
+  * @param other objeto que sale del collider.
   */
   private void OnTriggerExit(Collider other) {
     if (other.tag == "Player") {
@@ -106,18 +108,24 @@ public class LogicaNPC : MonoBehaviour {
       panelNPC2.SetActive(false);
     }
   }
-
+  /**
+  * @brief Función que se ejecuta cuando se pulsa NO
+  */
   public void PulseNo() {
     panelNPC2.SetActive(false);
     panelNPC.SetActive(true);
-  } 
-    
+  }
+  /**
+  * @brief Función que se ejecuta cuando se pulsa Aceptar.
+  */
   public void PulseAceptar() {
     panelNPC2.SetActive(false);
     panelNPC.SetActive(false);
     panelNPCMision.SetActive(false);
-  } 
-
+  }
+  /**
+  * @brief Función que se ejecuta cuando se pulsa Yes.
+  */
   public void PulseYes() {
     aceptarMision = true;
     for(int i = 0; i < objetivos.Length; i++) {

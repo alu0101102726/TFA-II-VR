@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['respawnpoint_53',['respawnPoint',['../class_spawn_manager.html#a81193da1135fd07774195f179f912699',1,'SpawnManager']]]
+  ['panelbar_59',['panelBar',['../class_scene_manager_stair.html#a65e33773b39b234381aacbc035f73672',1,'SceneManagerStair']]],
+  ['panelnpc_60',['panelNPC',['../class_logica_n_p_c.html#a9066a746b5c456e971fc3c362f3aaea2',1,'LogicaNPC']]],
+  ['panelnpc2_61',['panelNPC2',['../class_logica_n_p_c.html#ab185dfee758672b02b58d08facbfabc5',1,'LogicaNPC']]],
+  ['panelnpcmision_62',['panelNPCMision',['../class_logica_n_p_c.html#a29e3d2e1147abfe5060f99163ea80151',1,'LogicaNPC']]],
+  ['pausegame_63',['PauseGame',['../class_pause_game.html',1,'']]],
+  ['pickableobject_64',['PickableObject',['../class_pickable_object.html',1,'']]],
+  ['pickedobject_65',['PickedObject',['../class_pick_up_objects.html#ab78280d3f5d0e4159df794e74957bfbf',1,'PickUpObjects']]],
+  ['pickupobjects_66',['PickUpObjects',['../class_pick_up_objects.html',1,'']]],
+  ['player_67',['player',['../class_main_delegate.html#a16f8bc298d25a8412f943d34b3dcefe9',1,'MainDelegate.player()'],['../class_enemy_movement.html#a5d83004ec154d588880fccc4ad1e800b',1,'EnemyMovement.player()'],['../class_spawn_manager.html#ac8eadd82205642e03cefc3f6c67cb92d',1,'SpawnManager.player()'],['../class_player_move.html#af991009d734b31e896f6a8569e9f6e20',1,'PlayerMove.player()']]],
+  ['playerhealth_68',['PlayerHealth',['../class_player_health.html',1,'PlayerHealth'],['../class_enemy_movement.html#a023daefd02a33aeb9bcf61af80eeb0cc',1,'EnemyMovement.playerHealth()']]],
+  ['playermove_69',['PlayerMove',['../class_player_move.html',1,'']]],
+  ['playsonidoclick_70',['PlaySonidoClick',['../class_sound_manager.html#a9051e24d9f3c9c185111e7afc4a55a12',1,'SoundManager']]],
+  ['playtape_71',['PlayTape',['../class_pickable_object.html#acd174873e9056b8f1a76f1674087f3a9',1,'PickableObject']]],
+  ['psychiclevels_72',['psychicLevels',['../class_enemy_movement.html#a39accfe284636abaf63f86916be0f095',1,'EnemyMovement']]],
+  ['pulseaceptar_73',['PulseAceptar',['../class_logica_n_p_c.html#a7efa03ae92d474a3baff6ee1f5d6becb',1,'LogicaNPC']]],
+  ['pulseaceptarcompasspanel_74',['PulseAceptarCompassPanel',['../class_pick_up_objects.html#a22a10c021b30ee7233dc7efa2f695bb9',1,'PickUpObjects']]],
+  ['pulseaceptarlanternpanel_75',['PulseAceptarLanternPanel',['../class_pick_up_objects.html#a2953f912488612fef7f0920abb62da64',1,'PickUpObjects']]],
+  ['pulseno_76',['PulseNo',['../class_logica_n_p_c.html#ab3ea40013aa679cbfc0bb87ef4956efe',1,'LogicaNPC']]],
+  ['pulseyes_77',['PulseYes',['../class_logica_n_p_c.html#acba35cbca0ecf1f98457ecaf4c4abd7f',1,'LogicaNPC']]]
 ];

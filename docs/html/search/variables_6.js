@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['jugador_116',['jugador',['../class_logica_n_p_c.html#af47cde7aa4196d91cd6264b80793e821',1,'LogicaNPC']]],
-  ['jugadorcerca_117',['jugadorCerca',['../class_logica_n_p_c.html#a9631312aba8b69ed00cd062c4d4871f3',1,'LogicaNPC']]]
+  ['healthpanels_154',['healthPanels',['../class_player_health.html#a1f1c2c82f90e952c00c9cca6c7ff54b1',1,'PlayerHealth']]],
+  ['hearingrange_155',['hearingRange',['../class_enemy_movement.html#a017deacadecc6129a898b83fbfa86b8e',1,'EnemyMovement']]],
+  ['helpcompasspanel_156',['helpCompassPanel',['../class_pick_up_objects.html#a7cd6389463f250ca731936532a242936',1,'PickUpObjects']]],
+  ['helplanternpanel_157',['helpLanternPanel',['../class_pick_up_objects.html#aa7dd6fd2302e0fee704b20817b27c6c9',1,'PickUpObjects']]],
+  ['helptext_158',['helpText',['../class_pick_up_objects.html#a799230f33c015d55f704b9714383e437',1,'PickUpObjects']]],
+  ['helptextcompass_159',['helpTextCompass',['../class_pick_up_objects.html#a6a9525c7acc81f4896c57f0eec6b4ee1',1,'PickUpObjects']]]
 ];

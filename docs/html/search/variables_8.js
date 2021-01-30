@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['mainmusic_120',['mainMusic',['../class_sound_game_manager.html#a264fdddc2096754df89ecb105f1bf591',1,'SoundGameManager.mainMusic()'],['../class_sound_manager.html#ad9a2f232d37d04e57725a85fa7164459',1,'SoundManager.mainMusic()']]],
-  ['maxhealth_121',['maxHealth',['../class_enemy_health.html#ab865f795a3041aaeed6e706977810a6d',1,'EnemyHealth']]]
+  ['jugador_165',['jugador',['../class_logica_n_p_c.html#af47cde7aa4196d91cd6264b80793e821',1,'LogicaNPC']]],
+  ['jugadorcerca_166',['jugadorCerca',['../class_logica_n_p_c.html#a9631312aba8b69ed00cd062c4d4871f3',1,'LogicaNPC']]],
+  ['jumpforce_167',['jumpForce',['../class_player_move.html#a7df11313b4e6afcc3ce482da9f5bf599',1,'PlayerMove']]]
 ];

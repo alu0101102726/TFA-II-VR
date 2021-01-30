@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['textomision_139',['textoMision',['../class_logica_n_p_c.html#a962d1df3c85299b1170a5985549a7a1e',1,'LogicaNPC']]],
-  ['timer_140',['timer',['../class_enemy_movement.html#a302d0bddd64a701752b88667cb27fb79',1,'EnemyMovement']]]
+  ['reloadsound_188',['reloadSound',['../class_shoot.html#a6757468811f6a9aa0c9519c2e42cca8f',1,'Shoot']]],
+  ['respawnpoint_189',['respawnPoint',['../class_spawn_manager.html#a81193da1135fd07774195f179f912699',1,'SpawnManager']]]
 ];

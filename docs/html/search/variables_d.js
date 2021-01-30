@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['scenecode_134',['sceneCode',['../class_scene_manager_stair.html#a5917bf75fd97f4e1253628d9ee4d2191',1,'SceneManagerStair']]],
-  ['scenename_135',['sceneName',['../class_scene_manager_stair.html#ad2da9c4b224893175d52d688e3e8e603',1,'SceneManagerStair']]],
-  ['simbolmision_136',['simbolMision',['../class_logica_n_p_c.html#aeec20b2a093ad6599a4641c28acd5787',1,'LogicaNPC']]],
-  ['speakerclip_137',['speakerClip',['../class_speaker_manager.html#a08a91eb56f46238f0c795290c7266792',1,'SpeakerManager']]],
-  ['speed_138',['speed',['../class_enemy_movement.html#a10af9877c4abb972cfecbc3e284e742d',1,'EnemyMovement']]]
+  ['panelbar_180',['panelBar',['../class_scene_manager_stair.html#a65e33773b39b234381aacbc035f73672',1,'SceneManagerStair']]],
+  ['panelnpc_181',['panelNPC',['../class_logica_n_p_c.html#a9066a746b5c456e971fc3c362f3aaea2',1,'LogicaNPC']]],
+  ['panelnpc2_182',['panelNPC2',['../class_logica_n_p_c.html#ab185dfee758672b02b58d08facbfabc5',1,'LogicaNPC']]],
+  ['panelnpcmision_183',['panelNPCMision',['../class_logica_n_p_c.html#a29e3d2e1147abfe5060f99163ea80151',1,'LogicaNPC']]],
+  ['pickedobject_184',['PickedObject',['../class_pick_up_objects.html#ab78280d3f5d0e4159df794e74957bfbf',1,'PickUpObjects']]],
+  ['player_185',['player',['../class_main_delegate.html#a16f8bc298d25a8412f943d34b3dcefe9',1,'MainDelegate.player()'],['../class_enemy_movement.html#a5d83004ec154d588880fccc4ad1e800b',1,'EnemyMovement.player()'],['../class_spawn_manager.html#ac8eadd82205642e03cefc3f6c67cb92d',1,'SpawnManager.player()'],['../class_player_move.html#af991009d734b31e896f6a8569e9f6e20',1,'PlayerMove.player()']]],
+  ['playerhealth_186',['playerHealth',['../class_enemy_movement.html#a023daefd02a33aeb9bcf61af80eeb0cc',1,'EnemyMovement']]],
+  ['psychiclevels_187',['psychicLevels',['../class_enemy_movement.html#a39accfe284636abaf63f86916be0f095',1,'EnemyMovement']]]
 ];

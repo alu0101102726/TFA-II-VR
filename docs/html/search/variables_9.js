@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nav_122',['nav',['../class_enemy_movement.html#ab0d9f9bc2d3de00c1e2e7f10361dfc10',1,'EnemyMovement']]],
-  ['navstart_123',['navStart',['../class_enemy_movement.html#a7ca6f94340299f3ae47b1655b90e6a9c',1,'EnemyMovement']]],
-  ['numobjetivos_124',['numObjetivos',['../class_logica_n_p_c.html#a5823811cf725025bad95939c159d52b5',1,'LogicaNPC']]]
+  ['lantern_168',['lantern',['../class_objects_manager.html#a146662b1a0db3087fad8e2fc4b487fca',1,'ObjectsManager']]],
+  ['lastroom_169',['lastRoom',['../class_player_move.html#ad3ee62e70cdd4603a874e62a86d2056c',1,'PlayerMove']]],
+  ['logicnpc_170',['logicNPC',['../class_enemy_health.html#a048182741d35bf3245413ccb01d48403',1,'EnemyHealth']]]
 ];

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['pausegame_83',['PauseGame',['../class_pause_game.html',1,'']]],
-  ['pickableobject_84',['PickableObject',['../class_pickable_object.html',1,'']]],
-  ['pickupobjects_85',['PickUpObjects',['../class_pick_up_objects.html',1,'']]],
-  ['playerhealth_86',['PlayerHealth',['../class_player_health.html',1,'']]],
-  ['playermove_87',['PlayerMove',['../class_player_move.html',1,'']]]
+  ['scenemanagerstair_116',['SceneManagerStair',['../class_scene_manager_stair.html',1,'']]],
+  ['shoot_117',['Shoot',['../class_shoot.html',1,'']]],
+  ['soundgamemanager_118',['SoundGameManager',['../class_sound_game_manager.html',1,'']]],
+  ['soundmanager_119',['SoundManager',['../class_sound_manager.html',1,'']]],
+  ['spawnmanager_120',['SpawnManager',['../class_spawn_manager.html',1,'']]],
+  ['speakermanager_121',['SpeakerManager',['../class_speaker_manager.html',1,'']]]
 ];

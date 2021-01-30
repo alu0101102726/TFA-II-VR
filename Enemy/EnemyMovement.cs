@@ -132,7 +132,8 @@ public class EnemyMovement : MonoBehaviour  {
     TestSense(player.position, currentVision);
   }
   /**
-  * @brief ------------------------------------------------------------
+  * @brief Representa el área de escucha que tiene en enemigo
+  * @param position Posicion actual del enemigo
   */
   private void HearPoint(Vector3 position) {
     TestSense(position, hearingRange);
@@ -198,7 +199,8 @@ public class EnemyMovement : MonoBehaviour  {
   }
 
   /**
-  * @brief Función que genera un punto aleatorio en el mapa.
+  * @brief Función que genera un punto aleatorio en el mapa para asignarlo
+  * al mapa de nvegación.
   */
   private Vector3 GetRandomPoint(float distance, int layermask)  {
     Vector3 randomPoint = UnityEngine.Random.insideUnitSphere * distance + this.transform.position;

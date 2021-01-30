@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wanderdistance_71',['wanderDistance',['../class_enemy_movement.html#a8adace95a700a48c166c4cef515b938b',1,'EnemyMovement']]]
+  ['visionrange_99',['visionRange',['../class_enemy_movement.html#a55dedfc19f280a63b0822e1a9699f602',1,'EnemyMovement']]]
 ];
