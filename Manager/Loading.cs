@@ -1,27 +1,52 @@
-﻿using System.Collections;
+﻿/** Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Asignatura: Interfaces Inteligentes
+ * Curso: 4º
+ * Práctica final: TFA VR
+ * @author Carlos Díaz Calzadilla <alu0101102726@ull.edu.es>
+ * @author Manuel Andrés Carrera Galafate <alu0101132020@ull.edu.es>
+ * @author Victoria Montserrat Manrique Rolo <alu0101122083@ull.edu.es>
+ * @brief En este fichero se establece la carga entre escenas
+ **/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/**
+* @class Loading
+* @brief Clase encargada de gestionar el cambio entre escenas
+*/
 public class Loading : MonoBehaviour {
 
+	/**
+	* @brief Texto que establece el porcentaje de carga de escenas
+	*/
 	[SerializeField]
 	private Text percentText;
 
+	/**
+	* @brief Imagen que representa el progreso de carga
+	*/
 	[SerializeField]
 	private Image progressImage;
 
-	// En cuanto se active el objeto, se inciará el cambio de escena
+	/**
+	* @brief En cuanto se active el objeto, se inciará el cambio de escena
+	*/
 	void Start () {
 		//Iniciamos una corrutina, que es un método que se ejecuta 
 		//en una línea de tiempo diferente al flujo principal del programa
 		StartCoroutine(LoadScene());
 	}
 
-	//Corrutina
-	public IEnumerator LoadScene(string sceneToLoad = "")
-	{
+	/**
+	* @brief Corrutina que va a hacer la carga de escenas
+	* @param sceneToLoad Representa la escena a la que vamos a cambiar
+	*/
+	public IEnumerator LoadScene(string sceneToLoad = "")	{
 		AsyncOperation loading;
 
 		//Iniciamos la carga asíncrona de la escena y guardamos el proceso en 'loading'
@@ -50,7 +75,6 @@ public class Loading : MonoBehaviour {
 
 		//Activamos el salto de escena.
 		loading.allowSceneActivation = true;
-
 
 	}
 
