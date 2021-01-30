@@ -63,3 +63,6 @@ Creación del README del proyecto
 
 #### Desarrollo de la presentación 
 - Carlos Díaz Calzadilla
+
+#### Beta-tester
+- Manuel Andrés Carrera Galafate
