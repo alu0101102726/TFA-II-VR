@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour {
     public int maxHealth = 5;
     public int currentHealth;
-    public GameObject[] enemies;
     public GameObject[] healthPanels;
 
     void Start() {
@@ -19,19 +18,16 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision collision) {
-        foreach(GameObject currentEnemy in enemies) {
-            if(currentEnemy.tag == collision.gameObject.tag) {
-                TakeDamage(1);
-                int index = maxHealth - currentHealth;
-                if(index < healthPanels.Length) {
-                    healthPanels[index].SetActive(true);
-                }
+        if(collision.gameObject.tag == "Enemy") {
+            TakeDamage(1);
+            int index = maxHealth - currentHealth;
+            if(index < healthPanels.Length) {
+                healthPanels[index].SetActive(true);
             }
         }
     }
 
-    void Update() {      
-        print(currentHealth);  
+    void Update() {
         if(currentHealth <= 0) {
             SceneManager.LoadScene("Menu");
         }

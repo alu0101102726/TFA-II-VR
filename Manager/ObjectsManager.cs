@@ -7,12 +7,12 @@ public class ObjectsManager : MonoBehaviour {
     public GameObject compass;
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Q)) {
+        if(Input.GetButtonDown("UsarLinterna")) {
             lantern.GetComponent<Animation>().Play("Switch_CuboAction");
             lantern.GetComponent<Light>().enabled = !lantern.GetComponent<Light>().enabled;
         }
 
-        if(Input.GetKeyDown(KeyCode.E)) {
+        if(Input.GetButtonDown("UsarBrujula")) {
             compass.SetActive(!compass.activeSelf);
             compass.GetComponent<Animation>().Play("Open_brujula");
         }

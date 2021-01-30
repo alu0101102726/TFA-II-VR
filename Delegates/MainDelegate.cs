@@ -20,7 +20,6 @@ public class MainDelegate : MonoBehaviour
     }
 
     void start_movement(){
-        print("estamos en el delegado");
         if(enemyMoveEvent != null){
             enemyMoveEvent();
         }

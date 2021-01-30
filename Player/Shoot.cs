@@ -32,11 +32,11 @@ public class Shoot : MonoBehaviour {
     }
 
     void Update() {
-        if((Input.GetButtonDown("Fire3") || Input.GetKeyDown(KeyCode.F)) && ammo > 0) {
+        if((Input.GetButtonDown("Shoot") || Input.GetKeyDown(KeyCode.F)) && ammo > 0) {
             audio.PlayOneShot(shootSound, 0.5F);
             Disparar();
         }
-        if(Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.R)) {
+        if(Input.GetButtonDown("Reload") || Input.GetKeyDown(KeyCode.R)) {
             Reload();
         }
     }

@@ -4,10 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneManagerStair : MonoBehaviour {
-    public string sceneName;
-    public int sceneCode;
-    public GameObject panelBar;
+public class Loading : MonoBehaviour {
 
 	[SerializeField]
 	private Text percentText;
@@ -15,16 +12,20 @@ public class SceneManagerStair : MonoBehaviour {
 	[SerializeField]
 	private Image progressImage;
 
-    void Start() {        
-        panelBar.SetActive(false);
-    }
+	// En cuanto se active el objeto, se inciará el cambio de escena
+	void Start () {
+		//Iniciamos una corrutina, que es un método que se ejecuta 
+		//en una línea de tiempo diferente al flujo principal del programa
+		StartCoroutine(LoadScene());
+	}
 
 	//Corrutina
-	public IEnumerator LoadScene() {
+	public IEnumerator LoadScene(string sceneToLoad = "")
+	{
 		AsyncOperation loading;
 
 		//Iniciamos la carga asíncrona de la escena y guardamos el proceso en 'loading'
-		loading = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+		loading = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Single);
 
 		//Bloqueamos el salto automático entre escenas para asegurarnos el control durante el proceso
 		loading.allowSceneActivation = false;
@@ -49,19 +50,8 @@ public class SceneManagerStair : MonoBehaviour {
 
 		//Activamos el salto de escena.
 		loading.allowSceneActivation = true;
+
+
 	}
-    
-    private void OnTriggerEnter(Collider collider) {
-			if(collider.tag == "Player") {
-				GameObject.FindWithTag("Player").GetComponent<PlayerMove>().lastRoom = sceneCode;
-				panelBar.SetActive(true);
-				StartCoroutine(LoadScene());
-			}
-		}
-    
-    public void ChangeScene() {
-			panelBar.SetActive(true);
-			StartCoroutine(LoadScene());
-    }
 
 }

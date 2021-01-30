@@ -19,33 +19,24 @@ public class EnemyMovement : MonoBehaviour  {
         NavMeshAgent nav;
         public float timer = 0f;
 
-    void Awake ()
-    {
+    void Awake () {
         player = GameObject.FindGameObjectWithTag ("Player").transform;
         playerHealth = player.GetComponent <PlayerHealth> ();
         enemyHealth = GetComponent <EnemyHealth> ();
         nav = GetComponent<NavMeshAgent>();
-        navStart.enemyMoveEvent += StartPath;
+        // navStart.enemyMoveEvent += StartPath;
 
-        // StartPath();
     }
 
-    void StartPath()
-    {
-        // if(nav.enabled == false){
-
-            nav.enabled = true;
-            ClearPath();
-            ScaleVision(1f);
-            IsPsychic();
-            timer = 0f;
-        // } else {
-            // nav.enabled = false;
-        // }
+    void OnEnable() {
+        nav.enabled = true;
+        ClearPath();
+        ScaleVision(1f);
+        IsPsychic();
+        timer = 0f;
     }
 
-    void ClearPath()
-    {
+    void ClearPath() {
         if (nav.hasPath)
             nav.ResetPath();
     }
@@ -73,23 +64,18 @@ public class EnemyMovement : MonoBehaviour  {
     }
 
     private void TestSense(Vector3 position, float senseRange) {
-        if (Vector3.Distance(this.transform.position, position) <= senseRange)
-        {
+        if (Vector3.Distance(this.transform.position, position) <= senseRange)  {
             GoToPosition(position);
         }
     }
 
-    public void GoToPlayer()
-    {
+    public void GoToPlayer() {
         GoToPosition(player.position);
     }
 
-    private void GoToPosition(Vector3 position)
-    {
+    private void GoToPosition(Vector3 position) {
         timer = -1f;
-        //if (!enemyHealth.IsDead()) {
-            SetDestination(position);
-        //}
+        SetDestination(position);
     }
 
     private void SetDestination(Vector3 position) {
@@ -104,15 +90,14 @@ public class EnemyMovement : MonoBehaviour  {
         if (!nav.hasPath) {
             if (timer <= 0f) {
                 SetDestination(GetRandomPoint(wanderDistance, 5));
-                if (nav.pathStatus == NavMeshPathStatus.PathInvalid)
-                {
+                if (nav.pathStatus == NavMeshPathStatus.PathInvalid) {
                     ClearPath();
                 }
                 timer = Random.Range(idleTimeRange.x, idleTimeRange.y);
             }
-            // else {
-            //     timer -= Time.deltaTime;
-            // }
+            else {
+                timer -= Time.deltaTime;
+            }
         }
     }
 
@@ -121,7 +106,7 @@ public class EnemyMovement : MonoBehaviour  {
     }
 
     private Vector3 GetRandomPoint(float distance, int layermask)  {
-        Vector3 randomPoint = UnityEngine.Random.insideUnitSphere * distance + this.transform.position;;
+        Vector3 randomPoint = UnityEngine.Random.insideUnitSphere * distance + this.transform.position;
 
         NavMeshHit navHit;
         NavMesh.SamplePosition(randomPoint, out navHit, distance, layermask);
@@ -131,12 +116,5 @@ public class EnemyMovement : MonoBehaviour  {
 
     public void ScaleVision(float scale)  {
         currentVision = visionRange * scale;
-    }
-
-    private int GetCurrentNavArea() {
-        NavMeshHit navHit;
-        nav.SamplePathPosition(-1, 0.0f, out navHit);
-
-        return navHit.mask;
     }
 }

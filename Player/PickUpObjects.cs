@@ -28,27 +28,37 @@ public class PickUpObjects : MonoBehaviour
 
     void Update() {
         if(ObjectToPickUp != null && ObjectToPickUp.GetComponent<PickableObject>().isPickable == true) {
-            if(Input.GetKeyDown(KeyCode.C)) {
+            if(Input.GetButtonDown("TakeItem")) {
                 PickedObject = ObjectToPickUp;
-                PickedObject.GetComponent<PickableObject>().isPickable = false;
-                PickedObject.transform.SetParent(camera.transform);
-                Vector3 PO = camera.transform.position;
-                Vector3 Ip = Vector3.Lerp(PO, interactionZone.position, 0);
-                if (PickedObject.tag == "Linterna") {
-                    PickUpLantern(helpLanternPanel, helpText);     
-                    PickedObject.transform.rotation = camera.transform.rotation;
-                    PickedObject.transform.position = Ip;
-                    PickedObject.transform.Translate(-2, 0, 3);
+
+                if (PickedObject.tag == "Tape") {
+                    PickedObject.GetComponent<PickableObject>().PlayTape();
+                    if(PickedObject.GetComponent<PickableObject>().isSpecial) {
+                        PickedObject.GetComponent<PickableObject>().activableTrigger.SetActive(true);
+                    }
                 }
-                
-                PickedObject.GetComponent<Rigidbody>().useGravity = false;
-                PickedObject.GetComponent<Rigidbody>().isKinematic = true;
-                if (PickedObject.tag == "Brujula") {
-                    PO = new Vector3(camera.transform.position.x - 0.1f, camera.transform.position.y, camera.transform.position.z + 0.8f);
-                    PickUpCompass(helpCompassPanel, helpTextCompass);
-                    PickedObject.SetActive(false);
-                    PickedObject.transform.position = Ip;
-                    PickedObject.transform.Translate(-0.5f, 0, 1);
+                else {
+                    PickedObject.GetComponent<PickableObject>().isPickable = false;
+                    PickedObject.transform.SetParent(camera.transform);
+                    Vector3 PO = camera.transform.position;
+                    Vector3 Ip = Vector3.Lerp(PO, interactionZone.position, 0);
+                    if (PickedObject.tag == "Linterna") {
+                        PickUpLantern(helpLanternPanel, helpText);     
+                        PickedObject.transform.rotation = camera.transform.rotation;
+                        PickedObject.transform.position = Ip;
+                        PickedObject.transform.Translate(-0.3f, -0.2f, 0.2f);
+                    }
+                    
+                    PickedObject.GetComponent<Rigidbody>().useGravity = false;
+                    PickedObject.GetComponent<Rigidbody>().isKinematic = true;
+                    if (PickedObject.tag == "Brujula") {
+                        PickUpCompass(helpCompassPanel, helpTextCompass);
+                        PickedObject.SetActive(false);
+                        PickedObject.transform.rotation = camera.transform.rotation;
+                        PickedObject.transform.position = Ip;
+                        PickedObject.transform.Translate(0, -0.2f, 0.8f);
+                        PickedObject.transform.Rotate(90, 180, 0);
+                    }
                 }
             }
         }
