@@ -11,13 +11,14 @@ Interfaces Inteligentes
 ## Cuestiones importantes para el uso
   Primero de todo, comentar como funciona el sistema de vida ya que es un poco distinto a como es normalmente. El sistema de salud que cada vez que el jugador pierda vida, sus sitema de visión se va a ver afectado, es decir, va a ser reducido. De esta forma, cuando el jugador no tenga visión, significará que habrá perdido. Por otro lado, mencionar que de cara a la jugabilidad, hay que tener en cuenta diversos elementos:
     
-  - PULSAR : Con este botón podremos recoger tres tipos de objetos por el mapa. Una linterna, una brújula mágica y, por último, unas grabaciones. Cada una tendrá una funcionalidad diferente para nuestro viaje.
+  - PULSAR Δ: Con este botón podremos recoger tres tipos de objetos por el mapa. Una linterna, una brújula mágica y, por último, unas grabaciones. Cada una tendrá una funcionalidad diferente para nuestro viaje.
   - JOYSTICK: Va a permitir realizar el movimiento del personaje.
-  - PULSAR : Aquí podremos encender y apagar la linterna, lo que nos dará más visibilidad y poder detectar más facil a los enemigos.
-  - PULSAR : Con esto vamos a abrir nuestra brújula mágica y poder orientarnos en el mapa mejor.
-  - PULSAR : Podremos dar saltos y llegar a algunas zonas.
-  - PULSAR : Nos encontraremos con un amigo que nos va a ayudar en el viaje y con este botón hablamos con él.
-
+  - PULSAR ◯: Aquí podremos encender y apagar la linterna, lo que nos dará más visibilidad y poder detectar más facil a los enemigos.
+  - PULSAR L1: Con esto vamos a abrir nuestra brújula mágica y poder orientarnos en el mapa mejor.
+  - PULSAR X: Podremos dar saltos y llegar a algunas zonas.
+  - PULSAR ▢: Podremos recargar el arma.
+  - PULSAR R1: Podremos disparar el arma. 
+  
 ## Hitos de programación
   Primero de todo, durante el proyecto se ha aprendido a controlar con más facilidad el entorno de unity. Todo esto conlleva a una mejora en la calidad de programación para unity, como por ejemplo crear objetos vacíos para la gestión de elementos en la escena, en vez de ponerle el script a uno ya existente como sea el jugador o los enemigos. Además de todo esto, los hitos que más destacan son:
   - **Desarrollo de objetos en blender**: Una de las tareas más complicadas fue encontrar los elementos necesarios para el juego, pero gracias a blender, se pudieron desarrollar de forma autónoma y rápida.
