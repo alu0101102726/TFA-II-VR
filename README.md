@@ -34,7 +34,7 @@ Interfaces Inteligentes
   Para el desarrollo de este juego, dado que el proyecto se realizó en base a un juego de miedo, el que dió tiempo a implementar fue la brújula. Esto va a ayudarle al jugador que pueda ver en su brújula mágica la orientación que tiene y así poder orientarse mejor en el escenario.
 
 ## Gifs de animación
-[](https://youtu.be/IsI-_WVCPPg)
+![Demo TFA II VR](http://img.youtube.com/vi/IsI-_WVCPPg/0.jpg)](http://www.youtube.com/watch?v=IsI-_WVCPPg "Demo TFA II VR")
 
 ## Acuerdos de grupo
 
