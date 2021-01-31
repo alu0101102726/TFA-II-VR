@@ -33,7 +33,7 @@ Interfaces Inteligentes
 ## Aspectos destacables
   Para el desarrollo de este juego, dado que el proyecto se realizó en base a un juego de miedo, el que dió tiempo a implementar fue la brújula. Esto va a ayudarle al jugador que pueda ver en su brújula mágica la orientación que tiene y así poder orientarse mejor en el escenario.
 ## Gifs de animación
-
+![Video de demo](https://drive.google.com/drive/u/1/folders/1BoNoLHZQaMjxO9D6QDrokPcCq7xRBpzs)
 ## Acuerdos de grupo
 
 #### Desarrollo de entorno
